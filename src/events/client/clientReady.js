@@ -39,13 +39,13 @@ module.exports = async (client) => {
                     statuttext = [
                         `・❓┆/help`,
                         `・💻┆${totalGuilds} servers`,
-                        `・📨┆discord.gg/corwindev`,
+                        `・📨┆dsc.gg/zerodev`,
                         `・🎉┆400+ commands`,
                         `・🏷️┆Version ${require(`${process.cwd()}/package.json`).version}`
                     ];
                 }
                 const randomText = statuttext[Math.floor(Math.random() * statuttext.length)];
-                client.user.setPresence({ activities: [{ name: randomText, type: Discord.ActivityType.Playing }], status: 'online' });
+                client.user.setPresence({ activities: [{ name: randomText, type: Discord.ActivityType.Watching }], status: 'dnd' });
             })
     }, 50000)
 
